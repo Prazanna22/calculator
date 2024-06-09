@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #f9e7ff;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    background-color: #ecf0f3;
+    padding: 20px;
+    border-radius: 10px ;
+    box-shadow:  5px 5px 12px  rgba(0, 0, 0, .56), 5px 5px 12px  #fff;
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    
+}
+input{
+    background-color: #ecf0f3;
+    grid-column: span 4;
+    padding: 20px 15px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(29, 25, 85,0.16);
+    border: none;
+    border-radius: 15px;
+    color: #535353;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: end;
+    margin: 30px 0;
+
+}
+button{
+    background-color: #ecf0f3;
+    width: 50px;
+    height: 50px;
+    box-shadow:  5px 5px 12px  rgba(0, 0, 0, .56), -5px -5px 12px  #fff;
+    border: none;
+    border-radius: 60px;
+    margin: 8px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+button:hover{
+    background-color: #dfdfdf;
+}
+.equal{
+    cursor: pointer;
+    width: 120px;
+    background-color: blueviolet;
+    color: #fff;
+}
+.equal:hover{
+    background-color:  rgb(88, 33, 139);
+}
+body.dark-mode {
+    background-color: #242424;
+    color: white;
+}
+body.dark-mode input{
+    box-shadow: inset 5px 5px 12px  rgba(215, 215, 215, .26),
+     inset -5px -5px 12px  #434343;
+     background-color: #333;
+     color: #fff;
+    
+}
+body.dark-mode .calc {
+    background-color: #1e1e1e;
+    box-shadow:  5px 5px 12px  rgba(39, 39, 39, 0.56),
+      -5px -5px 12px  #000000;
+}
+body.dark-mode button {
+    background-color: #333;
+    color: white;
+    box-shadow:  5px 5px 12px  rgba(67, 67, 67, 0.56), -5px -5px 12px  #000000;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+}
+body.dark-mode .equal {
+    background-color: #ffb71b;
+}
+
+body.dark-mode .equal:hover {
+    background-color: #946c16;
+}
+.night {
+    cursor: pointer;
+    background:transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
